@@ -1,0 +1,10 @@
+use products;
+select * from item;
+select * from supplier;
+select * from item i join supplier s on i.supid=s.supid;
+select * from item i join supplier s where i.supid=s.supid;
+select * from item i  natural join supplier s  ;
+select * from item i join supplier s using(supid);
+select * from item i cross join supplier s where i.supid=s.supid;
+select * from item i left join supplier s on i.supid=s.supid;
+select * from item i right join supplier s on i.supid=s.supid;
